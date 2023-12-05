@@ -25,8 +25,8 @@ async def error_handler(update: aiogram.types.Update, exception):
 
 async def set_commands(bot: aiogram.Bot):
     commands = [
-        BotCommand(command="/start", description="Почати вибір гри"),
-        BotCommand(command="/cards", description="Переглянути існуючі картки"),
+        BotCommand(command="/start", description="start choosing game"),
+        BotCommand(command="/cards", description="Existend cards"),
     ]
     await bot.set_my_commands(commands)
 
